@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>তাওহীদের গ্রন্থাগার — আশরাফুল কাদের তাওহীদ</title>
+<meta name="description" content="আশরাফুল কাদের তাওহীদের লেখা, একাডেমিক বই ও নোটের অনলাইন সংগ্রহ।">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;600;800&family=Hind+Siliguri:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ECF1F0;--ink:#10242B;--soft:#4C6068;--line:#C5D2D2;--accent:#3B3A8F;--paper:#F7FAF9;
+--serif:'Noto Serif Bengali','Kalpurush',Georgia,serif;--sans:'Hind Siliguri','Noto Sans Bengali',system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1A1E;--ink:#E4ECEB;--soft:#94A9AE;--line:#243940;--accent:#A9A7FF;--paper:#14232A}}
+:root[data-theme="dark"]{--bg:#0F1A1E;--ink:#E4ECEB;--soft:#94A9AE;--line:#243940;--accent:#A9A7FF;--paper:#14232A}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.9;font-size:1.05rem}
+a{color:var(--accent);text-underline-offset:4px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.4rem}
+.narrow{max-width:660px}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);font-family:var(--sans)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:.8rem;padding-bottom:.8rem;gap:1rem}
+.brand{font-weight:500;color:var(--ink);text-decoration:none}
+nav{display:flex;gap:1.1rem;align-items:center;flex-wrap:wrap}
+nav a{color:var(--soft);text-decoration:none}nav a:hover{color:var(--accent)}
+.btn{background:none;border:1px solid var(--line);color:var(--soft);border-radius:2rem;padding:.15rem .8rem;font:inherit;cursor:pointer;text-decoration:none;display:inline-block}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.btn.main:hover{color:var(--bg);opacity:.9}
+.hero{display:grid;grid-template-columns:280px 1fr;gap:3rem;align-items:center;padding:4.5rem 0 4rem}
+.photo{position:relative;aspect-ratio:4/5;background:var(--paper);border:1px solid var(--line);outline:1px solid var(--line);outline-offset:10px}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo .ph{position:absolute;inset:0;display:none;place-items:center;font-size:6rem;font-weight:800;color:var(--accent)}
+.hero h1{font-weight:800;font-size:clamp(2rem,6vw,3.2rem);line-height:1.5;margin:0 0 1rem;animation:rise 1s ease both}
+.hero p{color:var(--soft);margin:0 0 1.4rem;max-width:34em;font-family:var(--sans)}
+.hero .acts{display:flex;gap:.7rem;flex-wrap:wrap;font-family:var(--sans)}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+h2{font-size:1.4rem;font-weight:600;margin:0 0 .4rem}
+.sub{color:var(--soft);font-family:var(--sans);margin:0 0 1.6rem}
+.tools{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.6rem;font-family:var(--sans)}
+.tools input{flex:1 1 220px;padding:.45rem .9rem;border:1px solid var(--line);border-radius:2rem;background:var(--paper);color:var(--ink);font:inherit}
+.chips{display:flex;gap:.5rem;flex-wrap:wrap}
+.chips button{background:none;border:1px solid var(--line);color:var(--soft);padding:.25rem .9rem;border-radius:2rem;font:inherit;cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:2rem 1.6rem}
+.book{display:flex;flex-direction:column}
+.cover{aspect-ratio:2/3;background:var(--paper);border:1px solid var(--line);overflow:hidden;box-shadow:6px 6px 0 var(--line);margin-bottom:.9rem;display:grid}
+.cover img{width:100%;height:100%;object-fit:cover;display:block}
+.cover .gen{padding:1rem;display:flex;flex-direction:column;justify-content:space-between;color:#fff;font-weight:800;line-height:1.5;font-size:1.1rem}
+.cover .gen small{font:400 .8rem var(--sans);opacity:.85}
+.book h3{font-size:1.02rem;line-height:1.55;margin:0}
+.book .m{font-family:var(--sans);font-size:.85rem;color:var(--soft)}
+.book .acts{display:flex;gap:.5rem;margin-top:.6rem;font-family:var(--sans);font-size:.9rem;flex-wrap:wrap}
+.book .acts a{padding:.05rem .7rem}
+.empty{color:var(--soft);font-family:var(--sans)}
+.about p{margin:0 0 1rem}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.links{list-style:none;padding:0;margin:0;font-family:var(--sans)}
+.links li{border-bottom:1px solid var(--line)}
+.links a{display:flex;justify-content:space-between;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+.links a:hover{color:var(--accent)}
+.links span{color:var(--soft)}
+form{display:grid;gap:.8rem;font-family:var(--sans)}
+form input,form textarea{width:100%;padding:.6rem .9rem;border:1px solid var(--line);border-radius:4px;background:var(--paper);color:var(--ink);font:inherit}
+.info{font-family:var(--sans);margin:0 0 1.4rem;padding:0;list-style:none}
+.info li{margin:.3rem 0}
+footer{padding:2.2rem 0 3rem;border-top:1px solid var(--line);color:var(--soft);font-family:var(--sans);font-size:.88rem}
+@media (max-width:760px){.hero{grid-template-columns:1fr;gap:2.4rem;padding-top:3rem}.photo{max-width:240px}.cols{grid-template-columns:1fr;gap:2.4rem}.grid{grid-template-columns:repeat(2,1fr);gap:1.6rem 1rem}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="#top" id="brand"></a>
+  <nav>
+    <a href="#library">গ্রন্থাগার</a><a href="#about">পরিচয়</a><a href="#social">সামাজিক মাধ্যম</a><a href="#contact">যোগাযোগ</a>
+    <button class="btn" id="theme" type="button" aria-label="থিম বদলান">◐</button>
+  </nav>
+</div></header>
+
+<main id="top" class="wrap">
+  <div class="hero">
+    <div class="photo">
+      <img id="pic" alt="" >
+      <div class="ph" id="ph"></div>
+    </div>
+    <div>
+      <h1 id="tagline"></h1>
+      <p id="intro"></p>
+      <div class="acts"><a class="btn main" href="#library">গ্রন্থাগারে যান</a><a class="btn" href="#contact">যোগাযোগ করুন</a></div>
+    </div>
+  </div>
+
+  <section id="library">
+    <h2>গ্রন্থাগার</h2>
+    <p class="sub">কবিতা, গল্প, উপন্যাস আর একাডেমিক বই ও নোট। সব বই বিনামূল্যে পড়া ও নামানো যায়।</p>
+    <div class="tools">
+      <input id="q" type="search" placeholder="বই বা লেখার নাম খুঁজুন" aria-label="বই খুঁজুন">
+      <div class="chips" id="chips" role="group" aria-label="বিভাগ"></div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="about" class="about"><div class="narrow" id="aboutBox"></div></section>
+
+  <section id="social">
+    <h2>সামাজিক যোগাযোগ মাধ্যম</h2>
+    <p class="sub">এখানে আমাকে পাবেন।</p>
+    <ul class="links narrow" id="socials"></ul>
+  </section>
+
+  <section id="contact">
+    <h2>যোগাযোগ</h2>
+    <p class="sub">লেখা নিয়ে মতামত, সহযোগিতা বা যেকোনো কথা।</p>
+    <div class="cols">
+      <div>
+        <ul class="info" id="info"></ul>
+      </div>
+      <form id="form">
+        <input name="n" placeholder="আপনার নাম" required aria-label="নাম">
+        <input name="e" type="email" placeholder="আপনার ইমেইল" required aria-label="ইমেইল">
+        <textarea name="m" rows="5" placeholder="বার্তা" required aria-label="বার্তা"></textarea>
+        <button class="btn main" type="submit" style="justify-self:start;padding:.4rem 1.4rem">পাঠান</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> <span id="fname"></span>। সর্বস্বত্ব সংরক্ষিত।</div></footer>
+
+<script>
+/* ==========================================================
+   ১) নিজের তথ্য এখানে বদলান (এই অংশটুকুই শুধু এডিট করলে চলবে)
+   ========================================================== */
+const SITE = {
+  name: "আশরাফুল কাদের তাওহীদ",
+  short: "তাওহীদ",
+  photo: "images/me.jpg",            // আপনার ছবির ফাইল (images ফোল্ডারে রাখুন)
+  tagline: "যা বলতে পারিনি, তা-ই লিখে রাখি।",
+  intro: "সিভিল ইঞ্জিনিয়ারিংয়ের শিক্ষার্থী, চট্টগ্রামে থাকি। কবিতা ও গল্প লিখি। এই গ্রন্থাগারে আমার লেখা আর পড়াশোনার নোট একসাথে রাখা আছে।",
+  about: [
+    "আমি তাওহীদ। দিনে সিভিল ইঞ্জিনিয়ারিংয়ের হিসাব কষি, রাতে শব্দ সাজাই। স্বীকারোক্তির ভঙ্গিতে কবিতা ও গদ্য লিখি।",
+    "পড়াশোনার নোটগুলো একাডেমিক বিভাগে রেখেছি, যাতে অন্য শিক্ষার্থীরাও কাজে লাগাতে পারে। কোনো ভুল চোখে পড়লে জানাবেন।"
+  ],
+  email: "you@example.com",
+  phone: "+880 1XXX-XXXXXX",
+  location: "চট্টগ্রাম, বাংলাদেশ"
+};
+
+const SOCIALS = [
+  { name: "ফেসবুক",   url: "https://facebook.com/",  handle: "facebook.com/আপনার-নাম" },
+  { name: "ইনস্টাগ্রাম", url: "https://instagram.com/", handle: "@আপনার-আইডি" },
+  { name: "ইউটিউব",   url: "https://youtube.com/",   handle: "চ্যানেলের নাম" },
+  { name: "লিংকডইন",  url: "https://linkedin.com/",  handle: "linkedin.com/in/আপনার-নাম" },
+  { name: "গিটহাব",   url: "https://github.com/",    handle: "github.com/আপনার-নাম" }
+];
+
+/* ==========================================================
+   ২) বই যোগ করার নিয়ম
+   - কভার ছবি: covers ফোল্ডারে রেখে cover: "covers/ফাইলের-নাম.jpg"
+   - পিডিএফ:   pdfs ফোল্ডারে রেখে pdf: "pdfs/ফাইলের-নাম.pdf"
+   - কভার না থাকলে নিজে থেকে রঙিন কভার তৈরি হবে।
+   - category যা লিখবেন, সেই নামে বিভাগ-বোতাম নিজে তৈরি হবে।
+   - ফাইলের নামে ইংরেজি অক্ষর ও ড্যাশ (-) ব্যবহার করুন, স্পেস নয়।
+   নিচের বইগুলো নমুনা, মুছে নিজেরগুলো বসান। এক ব্লক = এক বই।
+   ========================================================== */
+const BOOKS = [
+  { title: "মহাবিশ্বের শেষ দিন", author: "আশরাফুল কাদের তাওহীদ", category: "গল্প", year: "২০২৬",
+    cover: "covers/mohabishwer-shesh-din.jpg", pdf: "pdfs/mohabishwer-shesh-din.pdf" },
+  { title: "নদীর কাছে ফিরে আসা", author: "আশরাফুল কাদের তাওহীদ", category: "কবিতা", year: "২০২৬",
+    cover: "covers/nodir-kache.jpg", pdf: "pdfs/nodir-kache.pdf" },
+  { title: "হিসাববিজ্ঞান মিড-টার্ম মাস্টার নোট", author: "আশরাফুল কাদের তাওহীদ", category: "একাডেমিক", year: "২০২৬",
+    cover: "covers/accounting-notes.jpg", pdf: "pdfs/accounting-notes.pdf" },
+  { title: "সিভিল ইঞ্জিনিয়ারিং নোট", author: "আশরাফুল কাদের তাওহীদ", category: "একাডেমিক", year: "২০২৬",
+    cover: "covers/civil-notes.jpg", pdf: "pdfs/civil-notes.pdf" }
+];
+
+/* ========================= এর নিচে হাত দিতে হবে না ========================= */
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const PALETTE = ["#3B3A8F","#1F5F63","#8A3B4F","#5A4A1E","#2B4E7A","#4A3B63"];
+
+document.title = SITE.short + "-র গ্রন্থাগার";
+$("#brand").textContent = SITE.name;
+$("#tagline").innerHTML = esc(SITE.tagline).replace(/, ?/, ",<br>");
+$("#intro").textContent = SITE.intro;
+$("#fname").textContent = SITE.name;
+$("#yr").textContent = new Date().getFullYear().toLocaleString("bn-BD", {useGrouping:false});
+$("#ph").textContent = SITE.name.trim().charAt(0);
+
+const pic = $("#pic");
+pic.alt = SITE.name + " এর ছবি";
+pic.onerror = () => { pic.style.display = "none"; $("#ph").style.display = "grid"; };
+pic.src = SITE.photo;
+
+$("#aboutBox").innerHTML = "<h2>পরিচয়</h2>" + SITE.about.map(p => `<p>${esc(p)}</p>`).join("");
+$("#socials").innerHTML = SOCIALS.map(s =>
+  `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}<span>${esc(s.handle)}</span></a></li>`).join("");
+$("#info").innerHTML =
+  `<li>ইমেইল: <a href="mailto:${esc(SITE.email)}">${esc(SITE.email)}</a></li>` +
+  `<li>ফোন: ${esc(SITE.phone)}</li><li>ঠিকানা: ${esc(SITE.location)}</li>`;
+
+$("#form").addEventListener("submit", e => {
+  e.preventDefault();
+  const f = e.target;
+  const body = `${f.m.value}\n\n— ${f.n.value} (${f.e.value})`;
+  location.href = `mailto:${SITE.email}?subject=${encodeURIComponent("ওয়েবসাইট থেকে বার্তা")}&body=${encodeURIComponent(body)}`;
+});
+
+/* গ্রন্থাগার */
+let cat = "সব", term = "";
+const cats = ["সব", ...new Set(BOOKS.map(b => b.category))];
+$("#chips").innerHTML = cats.map(c => `<button type="button" data-c="${esc(c)}" aria-pressed="${c===cat}">${esc(c)}</button>`).join("");
+$("#chips").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  cat = b.dataset.c;
+  document.querySelectorAll("#chips button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  draw();
+});
+$("#q").addEventListener("input", e => { term = e.target.value.trim().toLowerCase(); draw(); });
+
+function coverHTML(b, i) {
+  const gen = `<div class="gen" style="background:${PALETTE[i % PALETTE.length]}"><small>${esc(b.category)}</small><span>${esc(b.title)}</span><small>${esc(b.author)}</small></div>`;
+  if (!b.cover) return gen;
+  return `<img src="${esc(b.cover)}" alt="${esc(b.title)} এর প্রচ্ছদ" loading="lazy" data-gen="${esc(gen).replace(/"/g,'&quot;')}">`;
+}
+
+function draw() {
+  const list = BOOKS.map((b, i) => ({ b, i })).filter(({ b }) =>
+    (cat === "সব" || b.category === cat) &&
+    (!term || (b.title + b.author + b.category).toLowerCase().includes(term)));
+  $("#grid").innerHTML = list.map(({ b, i }) => `
+    <article class="book">
+      <div class="cover">${coverHTML(b, i)}</div>
+      <h3>${esc(b.title)}</h3>
+      <div class="m">${esc(b.category)}${b.year ? " — " + esc(b.year) : ""}</div>
+      <div class="acts">
+        ${b.pdf ? `<a class="btn main" href="${esc(b.pdf)}" target="_blank" rel="noopener">পড়ুন</a><a class="btn" href="${esc(b.pdf)}" download>নামান</a>` : ""}
+      </div>
+    </article>`).join("") || '<p class="empty">কিছু পাওয়া যায়নি। অন্য শব্দে খুঁজুন।</p>';
+  document.querySelectorAll(".cover img").forEach(img => {
+    img.onerror = () => {
+      const t = document.createElement("template");
+      t.innerHTML = img.dataset.gen;
+      img.replaceWith(t.content);
+    };
+  });
+}
+draw();
+
+$("#theme").addEventListener("click", () => {
+  const r = document.documentElement;
+  const dark = r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme:dark)").matches;
+  r.dataset.theme = dark ? "light" : "dark";
+});
+</script>
+</body>
+</html>
